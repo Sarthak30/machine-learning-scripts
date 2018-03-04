@@ -34,3 +34,8 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, Y_train)
 
+#Prediciting the test set results
+y_pred = regressor.predict(X_test)
+
+#Building a optimal model using Backward elimination
+import statsmodels.formula.api as sm
